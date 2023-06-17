@@ -39,6 +39,7 @@ export class RegisterComponent {
       .subscribe( (response: any) => {
 
         if (response.status){
+          alert("Student saved. Redirect to login... ");
           this.router.navigateByUrl('');
         }else{
          alert("Incorrect ");
